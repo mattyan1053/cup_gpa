@@ -14,21 +14,24 @@ javascript:(
                 gpaSum += 0;
                 D += unitNum;
             }
-            if(record == '可') {
+            else if(record == '可') {
                 gpaSum += 1 * unitNum;
                 C += unitNum;
             }
-            if(record == '良') {
+            else if(record == '良') {
                 gpaSum += 2 * unitNum;
                 B += unitNum;
             }
-            if(record == '優') {
+            else if(record == '優') {
                 gpaSum += 3 * unitNum;
                 A += unitNum;
             }
-            if(record == '秀') {
+            else if(record == '秀') {
                 gpaSum += 4 * unitNum;
                 S += unitNum;
+            }
+            else {
+                continue;
             }
             unit += unitNum;
         }
